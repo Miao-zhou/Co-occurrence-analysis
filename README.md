@@ -6,9 +6,9 @@ It is a probabilistic model based on the Hypergeometric distribution  for detect
 
 ## Authors
 
-[周晓北] (Zhou Xiaobei) 
-[崔雷] (Cui Lei) 
-[黄德生] (Huang Desheng)   
+[周晓北] (Zhou Xiaobei)  
+[崔雷] (Cui Lei)  
+[黄德生] (Huang Desheng)    
 [周淼]  (Zhou Miao)
 
 ## Download data and code
