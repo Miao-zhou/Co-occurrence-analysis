@@ -49,9 +49,9 @@ The function "simu()" is in "code.R".
 - We calculated type I and II errors to evaluate the performance of our model:
 
 
-```text
-仿真结果图片
-```
+
+"![Image text](https://raw.githubusercontent.com/Miao-zhou/Co-occurrence-analysis/main/simulation%20result.png)"
+
 
 ## Real data application
 We chose a bibliometric study about pelvic organ prolapse (POP) as our real data application to illustrate how the probabilistic model can be used for MeSH word co-occurrence analysis and compared our new result with  the original one.
@@ -107,9 +107,9 @@ dev.off()
 ```
 ALL function are defined in the file "code.R".
 
-```text
-图一
-```
+
+"![Image text](https://raw.githubusercontent.com/Miao-zhou/Co-occurrence-analysis/main/fig1.png)"
+
 
 **Network of MeSH terms**
 - Then, we built a network structure of MeSH terms (0 < pval < 0.05) of POP dataset  to explore the relationship among these MeSH terms.
@@ -128,10 +128,9 @@ plot(g,vertex.size=4,vertex.label.cex=2)
 dev.off()
 ```
 
-```text
-图二
-"![Image text](https://raw.githubusercontent.com/Miao-zhou/ADENLP/main/raw%20label.png)"
-```
+
+"![Image text](https://raw.githubusercontent.com/Miao-zhou/Co-occurrence-analysis/main/fig2.png)"
+
 
 **Comparison of results**
 
@@ -172,10 +171,9 @@ dev.off()
 
 We can get the result like this:
 
-```text
-图三
-"![Image text](https://raw.githubusercontent.com/Miao-zhou/ADENLP/main/raw%20label.png)"
-```
+
+"![Image text](https://raw.githubusercontent.com/Miao-zhou/Co-occurrence-analysis/main/venn.png)"
+
 
 
 
