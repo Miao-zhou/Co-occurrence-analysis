@@ -6,14 +6,20 @@ It is a probabilistic model based on the Hypergeometric distribution  for detect
 
 ## Authors
 
-[周晓北] (Zhou Xiaobei) 
-[崔雷] (Cui Lei) 
-[黄德生] (Huang Desheng)   
+[周晓北] (Zhou Xiaobei)  
+[崔雷] (Cui Lei)  
+[黄德生] (Huang Desheng)    
 [周淼]  (Zhou Miao)
 
 ## Download data and code
 ```
  $ git clone https://github.com/Miao-zhou/Co-occurrence-analysis.git
+```
+
+## Install pubMR package
+```r
+install.packages("devtools")
+devtools::install_github("xizhou/pubMR")
 ```
 
 The detailed methods are introduced in our paper.
@@ -23,8 +29,9 @@ We set up a simulation to reflect the reality of MeSH term co-occurrence data an
 The code is following to realize this process:
 
 ```r
-dir <- "/Users/xizhou/Nutstore\ Files/paper_threshold/data/"
+dir <- "/your/path/Co-occurrence-analysis"
 setwd(dir)
+source("./code.R")
 set.seed(100)
 nt <- 100
 nf <- 200
@@ -70,10 +77,10 @@ library(tidyr)
 library(corrplot)
 library(igraph)
 
-dir <- "/Users/xizhou/Nutstore\ Files/Nutstore/mydoc/paper_threshold/data/"
+dir <- "your/path/Co-occurrence-analysis/data"
 setwd(dir)
-obj <- AB(input="zuo.xml")
-obj1=data.table(PMID=obj@PMID,MS=obj@MS)
+obj <- txtList(input="zuo.xml",inputType="xml")
+obj1=data.table(PMID=obj@PMID,MS=obj@MAJR)
 MS <- obj1[,MS]
 idx <- sapply(MS,is.null)
 obj1 <- obj1[!idx,]
@@ -173,7 +180,6 @@ We can get the result like this:
 
 
 "![Image text](https://raw.githubusercontent.com/Miao-zhou/Co-occurrence-analysis/main/venn.png)"
-
 
 
 
